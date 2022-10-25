@@ -3,3 +3,20 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.logo-nav{
+    width: 290px;
+}
+.carrito{
+    width: 70px;
+}
+header{
+    background-color: #AA8B56 ;
+}
+.nav_link{
+    color:#4E6C50 ;
+    padding: .5rem;
+    text-decoration: none;
+}
+.active{
+    color:white;
+}
