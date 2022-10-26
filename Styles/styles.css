@@ -1,5 +1,14 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
+.footer-container{
+    background: rgb(78,108,80);
+    background: radial-gradient(circle, rgba(78,108,80,1) 0%, rgba(197,155,84,1) 100%);
+}
+
+.redes{
+    padding:.2rem;
+}
+
+.redes:hover{
+    border: double orange;
+    border-radius: 50%; 
 }
