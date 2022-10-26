@@ -67,6 +67,12 @@ header {
   background-size: cover;
   background-position: center;
 }
+
+.title_png {
+  width: 20rem;
+  padding: 1rem;
+}
+
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
