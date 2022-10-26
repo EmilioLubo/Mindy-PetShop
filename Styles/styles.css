@@ -79,6 +79,18 @@ header{
     -webkit-animation:tracking-in-expand 7s cubic-bezier(.215,.61,.355,1.000) both;
     animation:tracking-in-expand 7s cubic-bezier(.215,.61,.355,1.000) both;
 }
+.footer-container{
+    background: rgb(78,108,80);
+    background: radial-gradient(circle, rgba(78,108,80,1) 0%, rgba(197,155,84,1) 100%);
+}
+
+.redes{
+    padding:.2rem;
+}
+
+.redes:hover{
+    border: double orange;
+    border-radius: 50%; 
 @media screen and (max-width: 768px) {
     .carousel_img1{
         height: 20vh;
