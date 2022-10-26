@@ -1,22 +1,107 @@
+:root{
+    --lighter: #F0EBCE;
+    --main: #AA8B56;
+    --expression: #4E6C50;
+    --strong: #395144;
+    --live: #E8472B;
+}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.logo-nav{
-    width: 290px;
-}
-.carrito{
-    width: 70px;
+body{
+    background-color: var(--lighter);
 }
 header{
-    background-color: #AA8B56 ;
+    background: rgb(240,235,206);
+    background: linear-gradient(90deg, rgba(240,235,206,1) 0%, rgba(170,139,86,1) 30%);
+    border-bottom: double var(--strong);
+}
+.logo-nav{
+    width: 20rem;
 }
 .nav_link{
-    color:#4E6C50 ;
-    padding: .5rem;
+    color: var(--expression);
     text-decoration: none;
 }
+.nav_link:hover{
+    color: var(--live);
+}
 .active{
-    color:white;
+    color: var(--strong);
+    text-decoration: underline;
+}
+.cart_logo{
+    width: 5rem;
+    border-radius: 50%;
+}
+.cart_logo:hover{
+
+    border: double var(--expression);
+}
+.carousel_img1{
+    height: 40vh;
+    background-image: url('../Assets/dogs1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel_img2{
+    height: 40vh;
+    background-image: url('../Assets/dogs2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel_img3{
+    height: 40vh;
+    background-image: url('../Assets/cats1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel_img4{
+    height: 40vh;
+    background-image: url('../Assets/dogs3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+@keyframes tracking-in-expand{
+    0%{
+        letter-spacing:-.5em;opacity:0
+    }
+    40%{
+        opacity:.6
+    }
+    100%{
+        opacity:1
+    }
+}
+.tracking-in-expand{
+    -webkit-animation:tracking-in-expand 7s cubic-bezier(.215,.61,.355,1.000) both;
+    animation:tracking-in-expand 7s cubic-bezier(.215,.61,.355,1.000) both;
+}
+@media screen and (max-width: 768px) {
+    .carousel_img1{
+        height: 20vh;
+        background-image: url('../Assets/dogs1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .carousel_img2{
+        height: 20vh;
+        background-image: url('../Assets/dogs2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .carousel_img3{
+        height: 20vh;
+        background-image: url('../Assets/cats1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .carousel_img4{
+        height: 20vh;
+        background-image: url('../Assets/dogs3.jpg');
+        background-size: cover;
+        background-position: center;
+    }   
 }
