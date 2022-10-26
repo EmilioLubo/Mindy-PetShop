@@ -121,6 +121,8 @@ form {
   margin: 1rem;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .carousel_img1 {
     height: 20vh;
