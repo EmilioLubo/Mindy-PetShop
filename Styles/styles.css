@@ -41,7 +41,7 @@ header {
   border-radius: 50%;
 }
 .cart_logo:hover {
-  border: double var(--live);
+  border: double var(--expression);
 }
 .carousel_img1 {
   height: 40vh;
@@ -98,23 +98,9 @@ header {
 }
 
 .redes:hover {
-  border: double var(--live);
+  border: double orange;
   border-radius: 50%;
 }
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.relleno {
-  width: 40rem;
-  margin: 1rem;
-}
-
 @media screen and (max-width: 768px) {
   .carousel_img1 {
     height: 20vh;
