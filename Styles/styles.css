@@ -89,11 +89,12 @@ form {
 }
 .card {
   background-color: var(--lighter);
-  color: var(--expression);
+  color: var(--strong);
   border-radius: .5rem;
   box-shadow: 0px 1px 5px rgba(0,0,0,2);
   cursor: default;
   transition: all 400ms ease;
+  border-color: var(--live);
 }
 .card:hover { 
   box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -102,12 +103,25 @@ form {
 .card img {
   border-radius: .5rem;
 }
-
-.accordion{
-  color: var(--expression);
- 
+.btn-card{
+  background-color: var(--live);
+  color: var(--lighter);
   
 }
+
+.accordion{
+  color: var(--lighter);
+  
+  
+}
+.background-card-filter{
+  background-color: var(--main) !important;
+}
+
+.accordion-body{
+  background-color: var(--expression);
+}
+
 @media screen and (max-width: 320px) {
     .logo-nav{
         width: 10rem;
