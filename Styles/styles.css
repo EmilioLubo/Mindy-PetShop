@@ -15,7 +15,7 @@
 body {
   background-color: var(--lighter);
 }
-header {
+nav {
   background: rgb(240, 235, 206);
   background: linear-gradient(
     90deg,
@@ -106,7 +106,6 @@ form {
   height: 20rem;
 }
 .btn-card{
-  background-color: var(--expression);
   color: var(--lighter);
 }
 tr{
@@ -123,11 +122,6 @@ tr{
   
   
 }
-
-.wea {
-  font-size: auto;
-}
-
 .background-card-filter{
   background-color: var(--main) !important;
 }
@@ -137,6 +131,9 @@ tr{
 }
 
 @media screen and (max-width: 320px) {
+    .table {
+      font-size: .6em;
+    }
     .logo-nav{
         width: 10rem;
     }

@@ -8,13 +8,13 @@
   <title>Mindy - Contacto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">+
   <link rel="stylesheet" href="../Styles/styles.css">
   <link rel="icon" type="image/png" href="../assets/image/recorte-removebg-preview.png"/>
 </head>
 
 <body>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container-fluid ">
         <a class="navbar-brand" href="../index.html">
           <img src="../assets/logo.png" class="logo-nav" alt="Logo">
@@ -46,45 +46,45 @@
         </div>
       </div>
     </nav>
-  </header>
   <main class="d-flex flex-column mb-2">
     <!-- FORMULARIO  -->
 
     <img src="../assets/contacto.png" alt="" class="title_png align-self-center">
     <div class="d-flex align-items-center justify-content-center flex-column flex-xl-row">
-      <form action="" class="col-10 col-xl-8">
+      <form action="" class="col-10 col-xl-8" id="form">
         <section class="col-10 col-xl-8">
           <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+          <input name="nombre" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
   
   
           <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+          <input name="apellido" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido" required>
   
   
           <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
   
   
           <label for="exampleFormControlInput1" class="form-label">Celular</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(Cod area)+Numero">
+          <input name="tel" type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(Cod area)+Numero" required>
   
   
-          <label for="exampleFormControlInput1" class="form-label">Nombre de la mascota</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre de la mascota">
+          <label for="exampleFormControlInput1" class="form-label" >Nombre de la mascota</label>
+          <input name="nombreMascota" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre de la mascota" required>
   
   
-          <select class="form-select mt-3 mb-2" aria-label="Default select example bg-danger">
+          <select name="tipoMascota" class="form-select mt-3 mb-2" aria-label="Default select example bg-danger" required>
             <option selected>Cual es tu mascota?</option>
-            <option value="1">Gato</option>
-            <option value="2">Perro</option>
-            <option value="3">Otro</option>
+            <option value="gato">Gato</option>
+            <option value="perro">Perro</option>
+            <option value="otro">Otro</option>
           </select>
   
   
           <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-          <button class="mt-3 btn btn-primary" type="submit">Enviar</button>
+          <textarea name="mensaje" class="form-control" id="exampleFormControlTextarea1" rows="5"  placeholder="Dejanos tu mensaje."></textarea>
+          <button class="mt-3 btn btn-primary" type="reset" id="formButtonReset">Borrar</button>
+          <button class="mt-3 btn btn-primary" type="submit" id="formButtonSend">Enviar</button>
         </section>
       </form>
       <div class="d-flex align-items-center justify-content-center col-10 col-xl-3">
@@ -171,10 +171,11 @@ class="d-flex flex-column container-fluid footer-container flex-md-row justify-c
 </ul>
 </footer>
 
-
+<script src="../JS/contact.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
