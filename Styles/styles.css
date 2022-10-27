@@ -115,6 +115,16 @@ form {
   margin: 1rem;
 }
 
+tr{
+    border: solid 2px var(--expression)
+} 
+.img-table{
+    width: 8rem;
+}
+.input-table{
+    width: 3rem;
+}
+
 @media screen and (max-width: 768px) {
   .carousel_img1 {
     height: 20vh;

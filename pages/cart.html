@@ -48,7 +48,48 @@
     </nav>
   </header>
   <main>
-
+    <div class="d-flex justify-content-evenly  flex-column flex-md-row">
+      <form class="col-8 align-self-center col-md-4 d-flex pt-4" role="search">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control " placeholder=" " aria-label="Recipient's username"
+            aria-describedby="button-addon2" id="searchLocation">
+          <span class="input-group-text bg-primary" id="basic-addon1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </span>
+        </div>
+      </form>
+    </div>
+    <div class="d-flex aling-items-center m-4">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-flex">
+              <img src="../assets/favicon.png" class="img-table" alt="Producto">
+              <p>Nombre Producto</p>
+            </td>
+            <td>$100</td>
+            <td>
+              <input class='input-table'type="number" min="1" value="1">
+              <button type="button" class="btn-close btn-danger" aria-label="Close"></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3 class='m-4'>Total=$100</h3>
+    </div>
   </main>
 
   <footer
