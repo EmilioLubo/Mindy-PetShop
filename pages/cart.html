@@ -45,38 +45,50 @@
         </div>
       </div>
     </nav>
-  <main>
+  <main class="d-flex flex-column">
   <img src="../assets/carro.png" class="title_png align-self-center" alt="">
-    <div class="d-flex aling-items-center m-4">
-      <table class="table table-hover">
+  
+    <div class="container-fluid">
+      <table class="table table-hover table-responsive">
         <thead>
           <tr>
             <th>Producto</th>
-            <th>Precio</th>
             <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Sub Total</th>
             <th>Eliminar Producto</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="d-flex">
-              <img src="../assets/favicon.png" class="img-table" alt="Producto">
+<!--             <td class="d-flex">
               <p>Nombre Producto</p>
             </td>
-            <td>$100</td>
             <td>
               <input class='input-table'type="number" min="1" value="1">
             </td>
+            <td>$100</td>
+            <td>$100</td>
             <td>
               <button type="button" class="btn-close btn-danger" aria-label="Close"></button>
             </td>
-          </tr>
+          </tr> -->
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">
+              <p  class="text-end fw-bold  ">Total</p>
+            </td>
+            <td  class="text-center fw-bold ">$X</td>
+            <td>
+            </td>
+          </tr>
+        </tfoot>
       </table>
-    </div>
-    <div>
-      <button>Eliminar Todo</button>
-      <button>Finalizar Compra</button>
+      <div class=" d-flex my-2 align-self-center justify-content-center gap-4">
+        <button>Eliminar Todo</button>
+        <button>Finalizar Compra</button>
+      </div>
     </div>
   </main>
 
@@ -161,3 +173,4 @@ class="d-flex flex-column container-fluid footer-container flex-md-row justify-c
 </body>
 
 </html>
+

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 :root {
-  --lighter: #f0ebce;
+  --lighter: rgb(239, 234, 204);
   --main: #aa8b56;
   --expression: #4e6c50;
   --strong: #395144;
@@ -131,6 +131,9 @@ tr{
 }
 
 @media screen and (max-width: 320px) {
+    .table {
+      font-size: .6em;
+    }
     .logo-nav{
         width: 10rem;
     }
