@@ -87,6 +87,26 @@ form {
   width: 40rem;
   margin: 1rem;
 }
+.card {
+  background-color: var(--lighter);
+  color: var(--expression);
+  border-radius: .5rem;
+  box-shadow: 0px 1px 5px rgba(0,0,0,2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover { 
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform:translateY(-3%)
+}
+.card img {
+  border-radius: .5rem;
+}
+
+.accordion{
+  color: var(--expression);
+  
+}
 @media screen and (max-width: 320px) {
     .logo-nav{
         width: 10rem;
