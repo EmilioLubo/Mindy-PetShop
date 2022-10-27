@@ -15,7 +15,7 @@
 body {
   background-color: var(--lighter);
 }
-header {
+nav {
   background: rgb(240, 235, 206);
   background: linear-gradient(
     90deg,
@@ -106,7 +106,6 @@ form {
   height: 20rem;
 }
 .btn-card{
-  background-color: var(--expression);
   color: var(--lighter);
 }
 tr{
