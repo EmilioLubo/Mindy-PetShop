@@ -63,11 +63,13 @@ function buildFilters(array, container){
         const search = ev.target.value
         filterProducts = filterManager(array, 'isSearched', search)
         filterProducts.length === 0 ? container.innerHTML = `<h4 class="text-center text-danger">NO HAY PRODUCTOS QUE COINCIDAN CON SU BUSQUEDA</h4>` : buildGallery(filterProducts, container)
+        toCart(filterProducts)
     })
     rangeInput.addEventListener('change', ev => {
         const maxInput = ev.target.value
         filterProducts = filterManager(array, 'isRanged', maxInput)
         filterProducts.length === 0 ? container.innerHTML = `<h4 class="text-center text-danger">NO HAY PRODUCTOS QUE COINCIDAN CON SU BUSQUEDA</h4>` : buildGallery(filterProducts, container)
+        toCart(filterProducts)
     })
 }
 function filterManager(array, action, value){
