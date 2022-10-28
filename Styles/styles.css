@@ -55,9 +55,6 @@ nav {
     background-position: center;
     background-size: cover;
 }
-.index_p{
-    text-indent: 2rem;
-}
 .index_img{
     border: double var(--live);
 }

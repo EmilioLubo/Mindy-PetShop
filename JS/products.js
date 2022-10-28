@@ -42,9 +42,9 @@ function buildGallery(array, container){
     array.forEach(el => {
         let reference = cart.find(prod => prod._id === el._id)
         container.innerHTML += 
-        `<div class="card" style="width: 18rem;">             
-        <img src="${el.imagen}" class="card-img-top" alt="${el.nombre}">             
-        <div class="card-body d-flex flex-column" style="height: 30rem;">               
+        `<div class="card" style="width: 24rem;">             
+        <img src="${el.imagen}" class="card-img-top" style="min-height: 30rem;" alt="${el.nombre}">             
+        <div class="card-body d-flex flex-column">               
           <h5 class="card-title">${el.nombre}</h5>               
           <p class="card-text">${el.descripcion}</p>               
           <p class="card-text">precio: $ ${el.precio}</p>           
