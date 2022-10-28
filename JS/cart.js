@@ -8,12 +8,20 @@ let counted = cart.map(el =>{
 const clearCart = document.getElementById('clearCart')
 clearCart.addEventListener('click', ev => {
     let array = JSON.parse(localStorage.getItem('cart'))
-    if(array > 0){
+    if(array.length > 0){
     counted = []
     localStorage.setItem('cart', JSON.stringify(counted))
     pirntTable(counted, tableContainer)
     Toastify({
         text: "Productos eliminados",
+        className: "danger",
+        style: {
+            background: "linear-gradient(90deg, rgba(4,1,0,1) 27%, rgba(237,11,11,1) 54%)",
+        }
+    }).showToast();
+} else{
+    Toastify({
+        text: "Aún no tienes productos en el carrito",
         className: "danger",
         style: {
             background: "linear-gradient(90deg, rgba(4,1,0,1) 27%, rgba(237,11,11,1) 54%)",
@@ -65,6 +73,7 @@ buyCart.addEventListener('click', ev => {
     <a href="../index.html" class=" mt-3 btn btn-buy-cart">Volver al Inicio</a>`
     cartContainer.innerHTML = ''
     cartContainer.appendChild(ul)
+    localStorage.setItem('boughtCart', JSON.stringify(array))
     array = []
     localStorage.setItem('cart', JSON.stringify(array))
     Toastify({
@@ -74,6 +83,14 @@ buyCart.addEventListener('click', ev => {
           background: "linear-gradient(to right, #00b09b, #96c93d)",
         }
       }).showToast();
+    } else{
+        Toastify({
+            text: "Aún no tienes productos en el carrito",
+            className: "danger",
+            style: {
+                background: "linear-gradient(90deg, rgba(4,1,0,1) 27%, rgba(237,11,11,1) 54%)",
+            }
+        }).showToast();
     }
 })
 function countEvent(array){
@@ -94,5 +111,12 @@ function closeEvent(array){
         array = array.filter(el => el._id != ev.target.id)
         localStorage.setItem('cart', JSON.stringify(array))
         pirntTable(array, tableContainer)
+        Toastify({
+            text: "Producto eliminado",
+            className: "danger",
+            style: {
+                background: "linear-gradient(90deg, rgba(4,1,0,1) 27%, rgba(237,11,11,1) 54%)",
+            }
+        }).showToast();
     }))
 }
