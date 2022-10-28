@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 :root {
   --lighter: #f0ebce;
   --main: #aa8b56;
@@ -9,6 +10,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 body {
   background-color: var(--lighter);
@@ -37,58 +39,27 @@ header {
   text-decoration: underline;
 }
 .cart_logo {
-  width: 5rem;
+    width: 5rem;
   border-radius: 50%;
 }
 .cart_logo:hover {
   border: double var(--expression);
 }
-.carousel_img1 {
-  height: 40vh;
-  background-image: url("../Assets/dogs1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.carousel_img2 {
-  height: 40vh;
-  background-image: url("../Assets/dogs2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.carousel_img3 {
-  height: 40vh;
-  background-image: url("../Assets/cats1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.carousel_img4 {
-  height: 40vh;
-  background-image: url("../Assets/dogs3.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .title_png {
   width: 20rem;
   padding: 1rem;
 }
-
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+.index_banner{
+    height: 40vh;
+    background-image: url('../assets/dogs3.jpg');
+    background-position: center;
+    background-size: cover;
 }
-.tracking-in-expand {
-  -webkit-animation: tracking-in-expand 7s cubic-bezier(0.215, 0.61, 0.355, 1)
-    both;
-  animation: tracking-in-expand 7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+.index_p{
+    text-indent: 2rem;
+}
+.index_img{
+    border: double var(--live);
 }
 .footer-container {
   background: rgb(78, 108, 80);
@@ -98,15 +69,14 @@ header {
     rgba(197, 155, 84, 1) 100%
   );
 }
-
 .redes {
   padding: 0.2rem;
 }
-
 .redes:hover {
   border: double orange;
   border-radius: 50%;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .carousel_img1 {
     height: 20vh;
@@ -132,4 +102,34 @@ header {
     background-size: cover;
     background-position: center;
   }
+=======
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.relleno {
+  width: 40rem;
+  margin: 1rem;
+}
+@media screen and (max-width: 320px) {
+    .logo-nav{
+        width: 10rem;
+    }
+>>>>>>> 46cc7b5b33a7c3732331a5467d8e2a7e0da4941d
+}
+@media screen and (max-width: 768px) {
+    .index_banner{
+        height: 20vh; 
+    }
+}
+@media screen and (min-width: 1024px) {
+    .index_banner{
+        height: 30vh;
+    }
+    .index_p{
+        font-size: 1.2em;
+    }
 }
