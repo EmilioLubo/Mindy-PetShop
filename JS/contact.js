@@ -15,7 +15,7 @@ formButtonSend.addEventListener ("submit",(ev) => {
     users.push(user)
     localStorage.setItem("users",JSON.stringify(users) )
     Toastify({
-        text: "Info enviada",
+        text: "Formulario enviado",
         className: "success",
         style: {
           background: "linear-gradient(to right, #00b09b, #96c93d)",
