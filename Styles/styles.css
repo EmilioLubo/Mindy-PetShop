@@ -108,28 +108,35 @@ form {
 .btn-card{
   color: var(--lighter);
 }
+table{
+  min-height: 40vh;
+}
 tr{
     border: solid 2px var(--expression)
 } 
-.img-table{
-    width: 8rem;
-}
 .input-table{
     width: 3rem;
 }
 .accordion{
   color: var(--lighter);
-  
-  
 }
 .background-card-filter{
   background-color: var(--main) !important;
 }
-
 .accordion-body{
   background-color: var(--expression);
 }
-
+.cart-container{
+  min-height: 50vh;
+}
+.btn-clear-cart{
+  background-color: var(--live);
+  color: var(--lighter);
+}
+.btn-buy-cart{
+  background-color: var(--expression);
+  color: var(--lighter);
+}
 @media screen and (max-width: 320px) {
     .table {
       font-size: .6em;
