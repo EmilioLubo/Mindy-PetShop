@@ -138,6 +138,13 @@ tr{
         width: 10rem;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .table {
+    font-size: .6em;
+  }
+}
+
 @media screen and (max-width: 768px) {
     .index_banner{
         height: 20vh; 
