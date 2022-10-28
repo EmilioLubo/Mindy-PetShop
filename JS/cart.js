@@ -2,8 +2,8 @@ const tableContainer = document.getElementById('tBody')
 const totalContainer = document.getElementById('total')
 const cartContainer = document.getElementById('cartContainer')
 const cart = JSON.parse(localStorage.getItem('cart'))
-let counted = cart.map(el =>{
-    return {...el, cant: 1, subtotal: el.precio}
+let counted = cart.map(elem =>{
+    return {...elem, cant: 1, subtotal: elem.precio}
 })
 localStorage.setItem('cart', JSON.stringify(counted))
 const clearCart = document.getElementById('clearCart')
