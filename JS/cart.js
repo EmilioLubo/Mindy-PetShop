@@ -26,7 +26,6 @@ function pirntTable(array, container){
     if(array.length > 0){
     container.innerHTML = ''
     array.forEach(product => {
-        console.log(product)
         container.innerHTML += 
         `<tr class="align-middle">
         <td>
@@ -81,9 +80,10 @@ function countEvent(array){
     let counter = document.querySelectorAll('.input-table')
     counter.forEach(el => el.addEventListener('change', ev => {
     let i = array.findIndex(el => el._id === ev.target.id)
-    if(e.target.value <= array[i].stock && e.target.value > 0){
+    if(ev.target.value <= array[i].stock && ev.target.value > 0){
     array[i].cant = ev.target.value
     array[i].subtotal = array[i].precio * array[i].cant
+    console.log(array)
     localStorage.setItem('cart', JSON.stringify(array))
     pirntTable(array, tableContainer)
     }}))
