@@ -2,9 +2,10 @@ const tableContainer = document.getElementById('tBody')
 const totalContainer = document.getElementById('total')
 const cartContainer = document.getElementById('cartContainer')
 const cart = JSON.parse(localStorage.getItem('cart'))
-let counted = cart.map(el =>{
-    return {...el, cant: 1, subtotal: el.precio}
+let counted = cart.map(elem =>{
+    return {...elem, cant: 1, subtotal: elem.precio}
 })
+localStorage.setItem('cart', JSON.stringify(counted))
 const clearCart = document.getElementById('clearCart')
 clearCart.addEventListener('click', ev => {
     let array = JSON.parse(localStorage.getItem('cart'))
@@ -48,10 +49,10 @@ function pirntTable(array, container){
             <button id=${product._id} type="button" class="btn-close btn-danger" aria-label="Close"></button>
             </td>
             </tr>`
-        let totalCount = array.reduce((el1, el2) => el1 + el2.subtotal, 0)
+            
+        })
+        let totalCount = counted.reduce((el1, el2) => el1 + el2.subtotal, 0)
         totalContainer.innerHTML = `$ ${totalCount}`
-         
-    })
     countEvent(array)
     closeEvent(array)
 } else{
@@ -64,11 +65,12 @@ buyCart.addEventListener('click', ev => {
     let array = JSON.parse(localStorage.getItem('cart'))
     if(array.length > 0){
     const ul = document.createElement('ul')
-    ul.className = ''
     ul.innerHTML += `<h4>COMPRA REALIZADA</h4>`
     array.forEach(el => {
         ul.innerHTML += `<li>${el.nombre} x ${el.cant}</li>`
     })
+    let totalCount = array.reduce((el1, el2) => el1 + el2.subtotal, 0)
+    console.log(totalCount)
     ul.innerHTML += `<li>TOTAL: $ ${array.reduce((el1, el2) => el1 + el2.subtotal, 0)}</li>
     <a href="../index.html" class=" mt-3 btn btn-buy-cart">Volver al Inicio</a>`
     cartContainer.innerHTML = ''
@@ -100,7 +102,6 @@ function countEvent(array){
     if(ev.target.value <= array[i].stock && ev.target.value > 0){
     array[i].cant = ev.target.value
     array[i].subtotal = array[i].precio * array[i].cant
-    console.log(array)
     localStorage.setItem('cart', JSON.stringify(array))
     pirntTable(array, tableContainer)
     }}))
