@@ -44,14 +44,16 @@ function buildGallery(array, container){
         container.innerHTML += 
         `<div class="card" style="width: 18rem;">             
         <img src="${el.imagen}" class="card-img-top" alt="${el.nombre}">             
-        <div class="card-body d-flex flex-column">               
+        <div class="card-body d-flex flex-column" style="height: 30rem;">               
           <h5 class="card-title">${el.nombre}</h5>               
           <p class="card-text">${el.descripcion}</p>               
           <p class="card-text">precio: $ ${el.precio}</p>           
           <p class="card-text" ${el.stock < 3 ? 'style="color: red;"' : ''} >stock: ${el.stock} ${el.stock < 3 ? '¡últimas unidades!' : ''}</p>               
-          <button id="${el._id}" class="btn btn-card align-self-center" style="background-color: ${reference ? '#e8472b' : '#4e6c50'};">${reference ? 'Quitar del carrito' : 'Agregar al carrito'}</button>              
-        </div>         
-      </div>`
+          </div>         
+          <div class="d-flex justify-content-center">
+            <button id="${el._id}" class="btn btn-card align-self-center mb-2" style="background-color: ${reference ? '#e8472b' : '#4e6c50'};">${reference ? 'Quitar del carrito' : 'Agregar al carrito'}</button>              
+          </div>               
+        </div>`
     });
 }
 function buildFilters(array, container){
