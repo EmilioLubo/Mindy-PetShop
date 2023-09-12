@@ -1,0 +1,149 @@
+{
+    "response": [
+      {
+        "_id": "1",
+        "nombre": "Píldoras Mágicas para Gatitos",
+        "descripcion": "Revitaliza la energía de tu gato y lo convierte en un mago felino. ¡Observa cómo realiza trucos asombrosos!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=1",
+        "precio": 250,
+        "stock": 10
+      },
+      {
+        "_id": "2",
+        "nombre": "Elixir de Alegría Perruna",
+        "descripcion": "Este elixir especial hará que tu perro nunca deje de mover la cola. ¡Siempre estará feliz y juguetón!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=2",
+        "precio": 350,
+        "stock": 8
+      },
+      {
+        "_id": "3",
+        "nombre": "Caramelos Curativos para Conejos",
+        "descripcion": "Los conejos adoran estos caramelos mágicos que alivian cualquier malestar. ¡Ideal para orejas largas!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=3",
+        "precio": 400,
+        "stock": 12
+      },
+      {
+        "_id": "4",
+        "nombre": "Antídoto contra Travesuras de Gatos",
+        "descripcion": "¿Tu gato hace travesuras constantemente? Este antídoto lo mantendrá tranquilo y enfocado. ¡No más destrozos!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=4",
+        "precio": 450,
+        "stock": 9
+      },
+      {
+        "_id": "5",
+        "nombre": "Medicamento Multivitamínico para Loros",
+        "descripcion": "Dale a tu loro una dosis de vitalidad con estas deliciosas pastillas multivitamínicas. ¡Hablará como un loro sabio!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=5",
+        "precio": 300,
+        "stock": 7
+      },
+      {
+        "_id": "6",
+        "nombre": "Jarabe de Energía para Perros",
+        "descripcion": "Este jarabe es perfecto para perros con baja energía. ¡Los mantendrá activos todo el día!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=6",
+        "precio": 400,
+        "stock": 11
+      },
+      {
+        "_id": "7",
+        "nombre": "Gotas Curativas para Peces",
+        "descripcion": "Tus peces estarán más felices que nunca con estas gotas curativas. ¡Nadando en salud!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=7",
+        "precio": 350,
+        "stock": 15
+      },
+      {
+        "_id": "8",
+        "nombre": "Suplemento para Hurones enérgicos",
+        "descripcion": "Este suplemento es el secreto para mantener a tus hurones llenos de energía y vitalidad. ¡Nunca se cansarán!",
+        "tipo": "medicamento",
+        "imagen": "https://picsum.photos/200?random=8",
+        "precio": 600,
+        "stock": 6
+      },
+      {
+        "_id": "9",
+        "nombre": "Pelota Saltarina para Perros",
+        "descripcion": "Esta pelota rebota y salta de manera impredecible, manteniendo a tu perro entretenido durante horas. ¡Saltos felices!",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=9",
+        "precio": 550,
+        "stock": 14
+      },
+      {
+        "_id": "10",
+        "nombre": "Peluche Sonoro para Gatos",
+        "descripcion": "Los gatos adoran este peluche que emite sonidos de aves. ¡Tu gato se sentirá como en la naturaleza!",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=10",
+        "precio": 900,
+        "stock": 18
+      },
+      {
+        "_id": "11",
+        "nombre": "Laberinto de Comida para Conejos",
+        "descripcion": "Este laberinto divertido y comestible mantendrá a tus conejos ocupados mientras disfrutan de un delicioso snack.",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=11",
+        "precio": 1000,
+        "stock": 10
+      },
+      {
+        "_id": "12",
+        "nombre": "Pelota Inteligente para Perros",
+        "descripcion": "Esta pelota inteligente se mueve de manera autónoma y estimula la mente de tu perro. ¡Diversión y aprendizaje!",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=12",
+        "precio": 1100,
+        "stock": 9
+      },
+      {
+        "_id": "13",
+        "nombre": "Ratón de Juguete para Gatos",
+        "descripcion": "Este ratón de juguete es el enemigo número uno de los gatos. ¡Pasará horas persiguiéndolo!",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=13",
+        "precio": 800,
+        "stock": 20
+      },
+      {
+        "_id": "14",
+        "nombre": "Caña de Pescar Interactiva para Gatos",
+        "descripcion": "Haz que tu gato se sienta como un pescador con esta caña de pescar interactiva. ¡Captura juguetona!",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=14",
+        "precio": 850,
+        "stock": 12
+      },
+      {
+        "_id": "15",
+        "nombre": "Rompecabezas de Comida para Perros",
+        "descripcion": "Este rompecabezas mantendrá a tu perro ocupado mientras trata de sacar su comida. ¡Estimulación mental y alimentación!",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=g",
+        "precio": 900,
+        "stock": 15
+      },
+      {
+        "_id": "16",
+        "nombre": "Pelota de Goma Duradera para Perros",
+        "descripcion": "Esta pelota de goma es resistente y perfecta para juegos de buscar y atrapar. ¡Horas de diversión asegurada!",
+        "tipo": "juguete",
+        "imagen": "https://picsum.photos/200?random=g",
+        "precio": 1000,
+        "stock": 13
+      }
+    ]
+  }
+  

@@ -35,20 +35,21 @@ function pirntTable(array, container){
     if(array.length > 0){
     container.innerHTML = ''
     array.forEach(product => {
+        console.log("hola")
         container.innerHTML += 
         `<tr class="align-middle">
-        <td>
-        <p>${product.nombre}</p>
-        </td>
-        <td>
-        <input type="number" id="${product._id}" class="input-table" min="1" max="${product.stock}" placeholder="1" value="${product.cant}">
+            <td>
+                <p>${product.nombre}</p>
+            </td>
+            <td>
+               <input type="number" id="${product._id}" class="input-table" min="1" max="${product.stock}" value="${product.cant}" />
             </td>
             <td>$ ${product.precio}</td>
             <td>$ ${product.subtotal}</td>
             <td>
-            <button id=${product._id} type="button" class="btn-close btn-danger" aria-label="Close"></button>
+                <button id=${product._id} type="button" class="btn-close btn-danger" aria-label="Close"></button>
             </td>
-            </tr>`
+        </tr>`
             
         })
         let totalCount = counted.reduce((el1, el2) => el1 + el2.subtotal, 0)

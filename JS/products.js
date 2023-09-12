@@ -9,7 +9,7 @@ let rangeValue
 getProducts(remediesContainer, toysContainer, cart)
 async function getProducts(container1, container2, array){
     try{
-        const res = await fetch('https://apipetshop.herokuapp.com/api/articulos')
+        const res = await fetch('../data/data.json')
         const {response} = await res.json()
         let filteredData
         if(remediesContainer){
@@ -43,7 +43,7 @@ function buildGallery(array, container){
         let reference = cart.find(prod => prod._id === el._id)
         container.innerHTML += 
         `<div class="card" style="width: 24rem;">             
-        <img src="${el.imagen}" class="card-img-top" style="min-height: 30rem;" alt="${el.nombre}">             
+        <img src="${el.imagen}" class="card-img-top" alt="${el.nombre}">             
         <div class="card-body d-flex flex-column">               
           <h5 class="card-title">${el.nombre}</h5>               
           <p class="card-text">${el.descripcion}</p>               
